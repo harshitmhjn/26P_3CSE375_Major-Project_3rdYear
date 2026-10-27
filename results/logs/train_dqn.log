@@ -1,0 +1,44 @@
+Training DQN | 300,000 timesteps | seeds [0, 1, 2] | regime steady | weights a=1.0 b=0.5 g=0.3
+    DQN seed 0: 25,000/300,000 (19s this session)
+    DQN seed 0: 50,000/300,000 (43s this session)
+    DQN seed 0: 75,000/300,000 (69s this session)
+    DQN seed 0: 100,000/300,000 (96s this session)
+    DQN seed 0: 125,000/300,000 (124s this session)
+    DQN seed 0: 150,000/300,000 (156s this session)
+    DQN seed 0: 175,000/300,000 (190s this session)
+    DQN seed 0: 200,000/300,000 (217s this session)
+    DQN seed 0: 225,000/300,000 (244s this session)
+    DQN seed 0: 250,000/300,000 (271s this session)
+    DQN seed 0: 275,000/300,000 (299s this session)
+    DQN seed 0: 300,000/300,000 (327s this session)
+seed 0: complete at 300,000 steps in 327s | held-out hotspot 0.000, completed 0.0, return -2547
+    DQN seed 1: 25,000/300,000 (19s this session)
+    DQN seed 1: 50,000/300,000 (42s this session)
+    DQN seed 1: 75,000/300,000 (67s this session)
+    DQN seed 1: 100,000/300,000 (93s this session)
+    DQN seed 1: 125,000/300,000 (120s this session)
+    DQN seed 1: 150,000/300,000 (146s this session)
+    DQN seed 1: 175,000/300,000 (172s this session)
+    DQN seed 1: 200,000/300,000 (199s this session)
+    DQN seed 1: 225,000/300,000 (225s this session)
+    DQN seed 1: 250,000/300,000 (252s this session)
+    DQN seed 1: 275,000/300,000 (280s this session)
+    DQN seed 1: 300,000/300,000 (307s this session)
+seed 1: complete at 300,000 steps in 307s | held-out hotspot 0.172, completed 626.2, return -1586
+    DQN seed 2: 25,000/300,000 (18s this session)
+Training DQN | 300,000 timesteps | seeds [0, 1, 2] | regime steady | weights a=1.0 b=0.5 g=0.3
+seed 0: complete at 300,000 steps in 327s | held-out hotspot 0.000, completed 0.0, return -2547
+seed 1: complete at 300,000 steps in 307s | held-out hotspot 0.172, completed 626.2, return -1586
+  resumed DQN seed 2 from 25,000 timesteps
+    DQN seed 2: 50,000/300,000 (26s this session)
+    DQN seed 2: 75,000/300,000 (56s this session)
+    DQN seed 2: 100,000/300,000 (84s this session)
+    DQN seed 2: 125,000/300,000 (117s this session)
+    DQN seed 2: 150,000/300,000 (146s this session)
+    DQN seed 2: 175,000/300,000 (175s this session)
+    DQN seed 2: 200,000/300,000 (203s this session)
+    DQN seed 2: 225,000/300,000 (232s this session)
+    DQN seed 2: 250,000/300,000 (261s this session)
+    DQN seed 2: 275,000/300,000 (291s this session)
+    DQN seed 2: 300,000/300,000 (321s this session)
+seed 2: complete at 300,000 steps in 340s | held-out hotspot 0.207, completed 569.6, return -1810

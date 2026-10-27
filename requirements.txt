@@ -1,0 +1,16 @@
+# Core simulator and baselines
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+gymnasium>=0.29
+
+# Deep reinforcement learning
+torch>=2.2
+stable-baselines3>=2.3
+
+# Dashboard (width="stretch" arguments need Streamlit >= 1.50)
+streamlit>=1.50
+plotly>=5.20
+
+# Tests
+pytest>=8.0

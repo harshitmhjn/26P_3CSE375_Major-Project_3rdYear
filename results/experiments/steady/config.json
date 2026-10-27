@@ -1,0 +1,84 @@
+{
+  "experiment": "steady",
+  "created_utc": "2026-10-22T11:38:31Z",
+  "evaluation_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005
+  ],
+  "policies": [
+    "random",
+    "round-robin",
+    "greedy-utilisation",
+    "greedy-coolest",
+    "DQN-seed0",
+    "DQN-seed1",
+    "DQN-seed2",
+    "PPO-seed0",
+    "PPO-seed1",
+    "PPO-seed2"
+  ],
+  "drl_runs_included": [
+    "DQN-seed0",
+    "DQN-seed1",
+    "DQN-seed2",
+    "PPO-seed0",
+    "PPO-seed1",
+    "PPO-seed2"
+  ],
+  "elapsed_seconds": 16.91,
+  "python": "3.11.9",
+  "environment_config": {
+    "facility": {
+      "n_servers": 16,
+      "n_racks": 4,
+      "server_capacity": 1.0
+    },
+    "thermal": {
+      "ambient_temp": 22.0,
+      "idle_temp": 30.0,
+      "heat_per_util": 4.0,
+      "recirc_same_rack": 0.03,
+      "recirc_cross_rack": 0.004,
+      "cooling_rate": 0.22,
+      "safe_temp": 58.0,
+      "critical_temp": 75.0,
+      "temp_norm": 58.0
+    },
+    "workload": {
+      "arrival_rate": 0.9,
+      "demand_min": 0.1,
+      "demand_max": 0.45,
+      "duration_min": 12,
+      "duration_max": 60,
+      "thermal_min": 0.55,
+      "thermal_max": 1.45,
+      "regime": "steady",
+      "diurnal_amplitude": 0.6,
+      "diurnal_period": 250,
+      "burst_prob": 0.012,
+      "burst_multiplier": 5.0,
+      "burst_length": 18,
+      "queue_capacity": 12
+    },
+    "reward": {
+      "alpha": 1.0,
+      "beta": 0.5,
+      "gamma_w": 0.3,
+      "hotspot_penalty": 1.0,
+      "defer_penalty": 0.35,
+      "wait_penalty": 0.06,
+      "drop_penalty": 8.0,
+      "invalid_penalty": 0.5,
+      "critical_penalty": 60.0,
+      "idle_power": 0.3,
+      "dynamic_power": 0.7,
+      "cooling_coeff": 0.11,
+      "energy_scale": 10.0
+    },
+    "episode_length": 1000,
+    "seed": 0
+  }
+}

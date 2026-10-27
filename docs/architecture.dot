@@ -1,0 +1,20 @@
+
+digraph G {
+  rankdir=LR; nodesep=0.35; ranksep=0.5;
+  node [shape=box, style="rounded,filled", fillcolor="#f4f4f1", color="#8a8984", fontname="Helvetica", fontsize=11];
+  edge [color="#52514e", fontname="Helvetica", fontsize=9];
+  cfg  [label="config.py\nEnvConfig (validated,\nJSON round-trip)"];
+  wl   [label="workload.py\nseeded Poisson tasks\nsteady | diurnal | bursty"];
+  th   [label="thermal.py\nlumped-parameter model\n+ stability check"];
+  env  [label="env.py\nDataCenterSchedulingEnv\n(Gymnasium)", fillcolor="#fdf1e7", color="#c2410c"];
+  base [label="baselines.py\nround-robin | greedy-util\ngreedy-coolest | random"];
+  agent[label="agent.py\nPPO / DQN (SB3)\n+ PolicyAgent wrapper"];
+  train[label="training.py\nresumable, fresh traces,\ncheckpoints"];
+  ev   [label="evaluate.py\nheld-out seeds\nmetrics"];
+  exp  [label="experiments.py\nCSV | report.md | figures"];
+  ui   [label="app.py + dashboard/\nStreamlit + Plotly", fillcolor="#e8f0fb", color="#2a78d6"];
+  cfg -> env; wl -> env [label="task stream"]; th -> env [label="temperatures"];
+  env -> train [label="obs, reward"]; train -> agent [label="learns"];
+  env -> ev; base -> ev [label="act(env)"]; agent -> ev [label="act(env)"];
+  ev -> exp; exp -> ui [label="results/"]; agent -> ui; base -> ui; env -> ui [label="live.py"];
+}

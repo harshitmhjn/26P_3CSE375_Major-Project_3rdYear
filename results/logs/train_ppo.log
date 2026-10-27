@@ -1,0 +1,43 @@
+Training PPO | 300,000 timesteps | seeds [0, 1, 2] | regime steady | weights a=1.0 b=0.5 g=0.3
+    PPO seed 0: 25,000/300,000 (26s this session)
+    PPO seed 0: 50,000/300,000 (52s this session)
+    PPO seed 0: 75,000/300,000 (79s this session)
+    PPO seed 0: 100,000/300,000 (106s this session)
+    PPO seed 0: 125,000/300,000 (133s this session)
+    PPO seed 0: 150,000/300,000 (170s this session)
+    PPO seed 0: 175,000/300,000 (200s this session)
+    PPO seed 0: 200,000/300,000 (227s this session)
+    PPO seed 0: 225,000/300,000 (253s this session)
+    PPO seed 0: 250,000/300,000 (278s this session)
+    PPO seed 0: 275,000/300,000 (303s this session)
+    PPO seed 0: 300,000/300,000 (329s this session)
+seed 0: complete at 300,032 steps in 329s | held-out hotspot 0.428, completed 828.8, return -1847
+    PPO seed 1: 25,000/300,000 (26s this session)
+    PPO seed 1: 50,000/300,000 (52s this session)
+    PPO seed 1: 75,000/300,000 (78s this session)
+    PPO seed 1: 100,000/300,000 (104s this session)
+    PPO seed 1: 125,000/300,000 (130s this session)
+    PPO seed 1: 150,000/300,000 (156s this session)
+    PPO seed 1: 175,000/300,000 (181s this session)
+    PPO seed 1: 200,000/300,000 (207s this session)
+    PPO seed 1: 225,000/300,000 (232s this session)
+    PPO seed 1: 250,000/300,000 (257s this session)
+    PPO seed 1: 275,000/300,000 (282s this session)
+    PPO seed 1: 300,000/300,000 (307s this session)
+seed 1: complete at 300,032 steps in 307s | held-out hotspot 0.561, completed 861.0, return -2015
+Training PPO | 300,000 timesteps | seeds [0, 1, 2] | regime steady | weights a=1.0 b=0.5 g=0.3
+seed 0: complete at 300,032 steps in 329s | held-out hotspot 0.428, completed 828.8, return -1847
+seed 1: complete at 300,032 steps in 307s | held-out hotspot 0.561, completed 861.0, return -2015
+    PPO seed 2: 25,000/300,000 (28s this session)
+    PPO seed 2: 50,000/300,000 (59s this session)
+    PPO seed 2: 75,000/300,000 (87s this session)
+    PPO seed 2: 100,000/300,000 (119s this session)
+    PPO seed 2: 125,000/300,000 (148s this session)
+    PPO seed 2: 150,000/300,000 (176s this session)
+    PPO seed 2: 175,000/300,000 (203s this session)
+    PPO seed 2: 200,000/300,000 (231s this session)
+    PPO seed 2: 225,000/300,000 (258s this session)
+    PPO seed 2: 250,000/300,000 (287s this session)
+    PPO seed 2: 275,000/300,000 (315s this session)
+    PPO seed 2: 300,000/300,000 (343s this session)
+seed 2: complete at 300,032 steps in 343s | held-out hotspot 0.427, completed 829.2, return -1651
